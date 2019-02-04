@@ -1,0 +1,61 @@
+﻿@model GradeViewModel
+
+@{
+    ViewBag.Title = "Grade";
+}
+
+<h2>Grade</h2>
+
+<label>Food Items</label>
+
+@using (Html.BeginForm("score", "home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken();
+
+    <div class="form-horizontal">
+        <h4>Score Item</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">FoodItem:</label>
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.SelectedFoodId, Model.FoodItems, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.SelectedFoodId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Grade.Presentation, htmlAttributes: new { @class = "control-label col-md-2 " })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Grade.Presentation, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Grade.Presentation, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Grade.Texture, htmlAttributes: new { @class = "control-label col-md-2 " })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Grade.Texture, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Grade.Texture, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Grade.Aroma, htmlAttributes: new { @class = "control-label col-md-2 " })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Grade.Aroma, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Grade.Aroma, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Grade.Flavour, htmlAttributes: new { @class = "control-label col-md-2 " })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Grade.Flavour, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Grade.Flavour, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Score" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+

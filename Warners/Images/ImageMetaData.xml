@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<images>
+  <image>
+    <filename>Image-101.jpg</filename>
+    <description>Woman inspecting</description>
+  </image>
+  <image>
+    <filename>Imae-102.jpg</filename>
+    <description>Food item</description>
+  </image>
+  <image>
+    <filename>Imae-103.jpg</filename>
+    <description>Apples</description>
+  </image>
+</images>

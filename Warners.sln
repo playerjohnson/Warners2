@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warners", "Warners\Warners.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warners.Tests", "Warners.Tests\Warners.Tests.csproj", "{80D81068-F2F4-4C61-A2A4-C7D57332DEB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warners.Common", "Warners.Common\Warners.Common.csproj", "{AF8894B4-B3C7-4F99-80BD-6DA1235AD93C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warners.Data", "Warners.Data\Warners.Data.csproj", "{429DB8F5-F318-4C34-873E-105ED4503E7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{80D81068-F2F4-4C61-A2A4-C7D57332DEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80D81068-F2F4-4C61-A2A4-C7D57332DEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80D81068-F2F4-4C61-A2A4-C7D57332DEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8894B4-B3C7-4F99-80BD-6DA1235AD93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8894B4-B3C7-4F99-80BD-6DA1235AD93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8894B4-B3C7-4F99-80BD-6DA1235AD93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8894B4-B3C7-4F99-80BD-6DA1235AD93C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{429DB8F5-F318-4C34-873E-105ED4503E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429DB8F5-F318-4C34-873E-105ED4503E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429DB8F5-F318-4C34-873E-105ED4503E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429DB8F5-F318-4C34-873E-105ED4503E7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
